@@ -44,6 +44,10 @@ From the root Prototype directory,
   generate the composite `dist/prototype.js`.
 * `rake package` will create a distribution tarball in the 
   `pkg/` directory.
+* `rake dist_web_worker` will preprocess a small part of the Prototype
+  source using Sprockets and generate the composite
+  `dist/prototype_webworker.js` which can be loaded into a Web
+  Worker (on Firefox at least).
 
 Contributing to Prototype
 -------------------------

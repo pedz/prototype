@@ -216,6 +216,15 @@ task :dist do
   )
 end
 
+desc "Builds only Class, Object, Hash, Array, and Enumerable"
+task :dist_web_worker do
+  PrototypeHelper.sprocketize(
+    :path => 'src',
+    :source => 'prototype_webworker.js',
+    :selector_engine => nil
+  )
+end
+
 namespace :doc do
   desc "Builds the documentation."
   task :build => [:require] do
